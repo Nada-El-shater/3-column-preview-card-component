@@ -16,15 +16,14 @@ body {
     --Very-dark-cyan: hsl(179, 100%, 13%);
 }
 .container {
-    width: 70%;
+    nax-width:calc(300px * 3)
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 15px;
+    overflow:hidden;
 }
 .cards {
-    width:300px;
-    height: 500px;
     padding: 40px;
 }
 .card-title {
@@ -39,16 +38,12 @@ body {
 }
 .card-1 {
     background-color: var(--Bright-orange);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
 }
 .card-2 {
     background-color: var(--Dark-cyan);
 }
 .card-3 {
     background-color: var(--Very-dark-cyan);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 [type="button"] {
     margin-top: 90px;
@@ -84,31 +79,15 @@ body {
 }
 
 @media(max-width:375px) {
-    body {
-        justify-content: center;
-    }
     .container {
+        max-width:300px;
         align-items: center;
         flex-direction: column;
-    }
-    .cards{
-        
-        height: 420px;
-    }
-    .card-1 {
-        border-bottom-left-radius: 0;
-        border-top-right-radius:15px;
-        border-top-left-radius:15px;
-    }
-    .card-3 {
-        border-top-right-radius: 0;
-        border-bottom-right-radius:15px;
-        border-bottom-left-radius:15px;
     }
     [type="button"]{
         margin-top: 15px;
     }
-    .footer {
+    footer {
        width: 300px;
        text-align: center;
     }
